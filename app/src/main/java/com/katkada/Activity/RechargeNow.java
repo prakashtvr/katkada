@@ -202,6 +202,8 @@ public class RechargeNow extends AppCompatActivity implements AsyncTaskCompleteL
             // LoadOperators1 loadOperators = new LoadOperators1();
             // loadOperators.execute(OperatorType);
         }
+        LoadWalletValue loadWalletValue1 = new LoadWalletValue(getBaseContext());
+        loadWalletValue1.execute(preferenceHelper.getUserId());
         recharge(selectedAmount);
     }
     public void recharge(String selectedAmount2) {
@@ -301,8 +303,8 @@ public class RechargeNow extends AppCompatActivity implements AsyncTaskCompleteL
                             return;
                         }
                     } else {
-                        LoadWalletValue loadWalletValue1 = new LoadWalletValue(getBaseContext());
-                        loadWalletValue1.execute(preferenceHelper.getUserId());
+                      ///  LoadWalletValue loadWalletValue1 = new LoadWalletValue(getBaseContext());
+                       /// loadWalletValue1.execute(preferenceHelper.getUserId());
                         if (textInputLayout_Coupon.getVisibility() == View.VISIBLE) {
                             CouponCode = et_Couponcode.getText().toString();
                             try {
@@ -322,8 +324,8 @@ public class RechargeNow extends AppCompatActivity implements AsyncTaskCompleteL
                                             LoadWalletValue.WalletAmount);
                                 } else if (Double.parseDouble(CouponValidationGlobal.Copon_Amount) < Double.parseDouble(et_value.getText().toString())) {
                                     double remain_BAL_from_Coupon = (Double.parseDouble(et_value.getText().toString()) - Double.parseDouble(CouponValidationGlobal.Copon_Amount));
-                                    LoadWalletValue loadWalletValue = new LoadWalletValue(RechargeNow.this);
-                                    loadWalletValue.execute(Login.userID);
+                                   // LoadWalletValue loadWalletValue = new LoadWalletValue(RechargeNow.this);
+                                   // loadWalletValue.execute(Login.userID);
                                     Log.d("remain_BAL_from_Coupon", "onClick: RegionID: " + RegionID);
                                      Intent i = new Intent(getBaseContext(), PaymentOption.class);
                                     i.putExtra("mobileNo", et_MobileNo.getText().toString());
@@ -344,8 +346,8 @@ public class RechargeNow extends AppCompatActivity implements AsyncTaskCompleteL
                             }
                         } else {
                             isCoupon = false;
-                            LoadWalletValue loadWalletValue = new LoadWalletValue(getBaseContext());
-                            loadWalletValue.execute(preferenceHelper.getUserId());
+                           /// LoadWalletValue loadWalletValue = new LoadWalletValue(getBaseContext());
+                          ///  loadWalletValue.execute(preferenceHelper.getUserId());
                             Intent i = new Intent(getBaseContext(), PaymentOption.class);
                             i.putExtra("mobileNo", et_MobileNo.getText().toString());
                             i.putExtra("amount", et_value.getText().toString());

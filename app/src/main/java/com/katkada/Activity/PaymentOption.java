@@ -512,6 +512,7 @@ public class PaymentOption extends AppCompatActivity {
             //   Log.d("Login.userID: ",Login.userID);
             Log.d("mobileNO: ", String.valueOf(args[2]));
             //  Log.d("restAmount: ",""+restAmount);
+            Log.v("Prakash","Recharge parameters-->>"+params);
             JSONObject json1 = jsonParser.makeHttpRequest(Config.PAYMENT_THROUGH_COUPON, "POST", params);
             return json1;
         }
@@ -525,6 +526,7 @@ public class PaymentOption extends AppCompatActivity {
                 if (o != null) {
 
                     jsonObject = new JSONObject(String.valueOf(o));
+                    Log.v("Prakash","Recharge response-->> "+jsonObject);
                     if (jsonObject.has("success") && jsonObject.getString("success").equals("1")) {
                         if (jsonObject.getString("success").equals("1")) {
                             if (jsonObject.has("data")) {

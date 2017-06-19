@@ -1,11 +1,14 @@
 package com.katkada.Other;
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.util.Log;
 import android.widget.Toast;
 
 import com.katkada.Activity.Login;
+import com.katkada.Activity.MainActivity;
+import com.katkada.Activity.RechargeNow;
 
 import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONObject;
@@ -85,17 +88,34 @@ public class PaymentThroughCoupon extends AsyncTask {
                             // Toast.makeText(context, "URL:\n\t"+URL, Toast.LENGTH_SHORT).show();
                             // WebVIew_CCAvanue.mywebview.loadUrl(URL);
                             //mywebview.loadUrl(url);
+
                             LoadWalletValue loadWalletValue1 = new LoadWalletValue(context);
                             loadWalletValue1.execute(Login.userID);
                             Toast.makeText(context, jsonObject.getString("message").toString(), Toast.LENGTH_SHORT).show();
                         }
                         if (jsonObject.has("message")) {
+                            if(jsonObject.getString("message").toString().equals("Thank you for recharging with us. This coupon has been used and transaction is successful."))
+                            {
+                                LoadWalletValue loadWalletValue1 = new LoadWalletValue(context);
+                                loadWalletValue1.execute(Login.userID);
+                                context.startActivity(new Intent(context,MainActivity.class));
+                                Toast.makeText(context, jsonObject.getString("message").toString(), Toast.LENGTH_SHORT).show();
+
+                                ((RechargeNow) context).finish();
+                              //  Toast.makeText(context, jsonObject.getString("message").toString(), Toast.LENGTH_SHORT).show();
+                                return;
+
+                                // RechargeNow rechargeNow= new RechargeNow();
+                                // rechargeNow.finish();
+                            }
                             LoadWalletValue loadWalletValue1 = new LoadWalletValue(context);
                             loadWalletValue1.execute(Login.userID);
                             Toast.makeText(context, jsonObject.getString("message").toString(), Toast.LENGTH_SHORT).show();
                         }
                     }
                 } else if (jsonObject.getString("error").equals("1")) {
+
+
                     if (jsonObject.has("message")) {
                         Toast.makeText(context, "" + jsonObject.getString("message"), Toast.LENGTH_SHORT).show();
                     } else {

@@ -15,7 +15,7 @@ import java.util.ArrayList;
 /**
  * Created by prakash on 02-12-2016.
  */
-public class LoadWalletValue extends AsyncTask {
+public class   LoadWalletValue extends AsyncTask {
 
     JSONParser jsonParser = new JSONParser();
     public static String WalletAmount, RegionKey;
