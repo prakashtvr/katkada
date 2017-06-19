@@ -540,6 +540,13 @@ public class PaymentOption extends AppCompatActivity {
                             }
                         }
                     } else if (jsonObject.getString("error").equals("1")) {
+                        if(jsonObject.getJSONObject("errors").has("mobile_no"))
+                        {
+                            Toast.makeText(context, "" + jsonObject.getJSONObject("errors").getString("mobile_no"), Toast.LENGTH_SHORT).show();
+                            return;
+                        }
+                       // Toast.makeText(context, "" + jsonObject.getString("message"), Toast.LENGTH_SHORT).show();
+                       // return;
                         if (jsonObject.getJSONObject("error_msg").has("amount")) {
                             Toast.makeText(context, "" + jsonObject.getJSONObject("error_msg").getString("amount"), Toast.LENGTH_SHORT).show();
                         } else {

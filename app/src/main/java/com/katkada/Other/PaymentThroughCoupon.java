@@ -114,7 +114,16 @@ public class PaymentThroughCoupon extends AsyncTask {
                         }
                     }
                 } else if (jsonObject.getString("error").equals("1")) {
+                    if (jsonObject.has("errors")) {
 
+                        if(jsonObject.getJSONObject("errors").has("mobile_no"))
+                        {
+                            Toast.makeText(context, "" + jsonObject.getJSONObject("errors").getString("mobile_no"), Toast.LENGTH_SHORT).show();
+                            return;
+                        }
+                        Toast.makeText(context, "" + jsonObject.getString("message"), Toast.LENGTH_SHORT).show();
+                        return;
+                    }
 
                     if (jsonObject.has("message")) {
                         Toast.makeText(context, "" + jsonObject.getString("message"), Toast.LENGTH_SHORT).show();
