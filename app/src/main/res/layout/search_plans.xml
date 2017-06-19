@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/vertical_scroll"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:layout_margin="1dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@color/white">
+
+    <TextView
+        android:text="0 MB."
+        android:textSize="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView48"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/primary_darker"
+        android:layout_below="@+id/seekBar_std_local"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="0 Mins."
+        android:textSize="10dp"
+        android:layout_width="wrap_content"
+        android:textColor="@color/primary_darker"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_progressvalue"
+        android:layout_above="@+id/seekBar_std_local"
+
+
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2G"
+        android:textSize="30sp"
+        android:background="@drawable/rounded_textview"
+        android:textColor="@color/textcolor"
+        android:gravity="center"
+        android:id="@+id/tv_2g"
+
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/spinner3"
+        android:layout_alignLeft="@+id/radioConnectiontype"
+        android:layout_alignStart="@+id/radioConnectiontype" />
+
+    <TextView
+        android:text="Search Plans"
+         android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView26"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3G"
+        android:textSize="30sp"
+        android:background="@drawable/rounded_textview"
+        android:textColor="@color/textcolor"
+        android:gravity="center"
+        android:id="@+id/tv_3g"
+
+        android:layout_alignBaseline="@+id/tv_4g"
+        android:layout_alignBottom="@+id/tv_4g"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4G"
+        android:textSize="30sp"
+        android:background="@drawable/circle"
+        android:textColor="@color/textcolor"
+        android:gravity="center"
+        android:id="@+id/tv_4g"
+
+        android:layout_alignBaseline="@+id/tv_2g"
+        android:layout_alignBottom="@+id/tv_2g"
+        android:layout_alignRight="@+id/radioConnectiontype"
+        android:layout_alignEnd="@+id/radioConnectiontype" />
+
+    <TextView
+        android:text="Total SMS"
+        android:layout_width="wrap_content"
+        android:textSize="12dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView42"
+        android:layout_alignLeft="@+id/textView35"
+        android:layout_alignStart="@+id/textView35"
+        android:layout_alignTop="@+id/tv_progressvalue1" />
+
+    <TextView
+        android:text="0 SMS."
+        android:textSize="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_progressvalue1"
+        android:layout_centerHorizontal="true"
+
+        android:textColor="@color/primary_darker"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/textView48"
+        />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView48"
+        android:layout_marginTop="5dp"
+
+        android:id="@+id/seekBar_total_data"
+        android:progressDrawable="@drawable/green_scrubber_progress"
+        android:thumb="@drawable/thump"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/textView61"
+        android:layout_alignStart="@+id/textView61" />
+
+    <SeekBar
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar_total_SMS"
+
+        android:progressDrawable="@drawable/green_scrubber_progress"
+        android:thumb="@drawable/thump"
+        android:layout_marginTop="5dp"
+
+        android:layout_below="@+id/tv_progressvalue1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/textView42"
+        android:layout_alignStart="@+id/textView42" />
+
+    <Button
+        android:text="Search Plans"
+        android:layout_width="wrap_content"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:textColor="@color/white"
+        android:paddingBottom="5dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBar_total_SMS"
+         android:layout_centerHorizontal="true"
+        android:background="@drawable/button_background_new"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/button_searchplan"
+
+    />
+
+
+
+
+
+
+
+    <Spinner
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+
+
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:background="@drawable/border_green"
+
+        android:id="@+id/spinner3"
+        android:layout_below="@+id/spinner"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+
+    <TextView
+        android:text="Select Operator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner"
+        android:layout_alignLeft="@+id/spinner"
+        android:layout_alignStart="@+id/spinner"
+        android:id="@+id/textView33" />
+
+    <TextView
+        android:text="Select Region"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView27"
+        android:layout_alignLeft="@+id/spinner"
+        android:layout_alignStart="@+id/spinner"
+        android:layout_below="@+id/radioConnectiontype" />
+
+    <RadioGroup
+        android:id="@+id/radioConnectiontype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_below="@+id/textView26"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:id="@+id/radio_prepaid"
+            android:text="Prepaid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/primary_darker"
+            android:textColor="@color/textcolor"
+            android:textSize="15dp"
+
+            android:checked="true"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.31" />
+
+        <RadioButton
+            android:buttonTint="@color/primary_darker"
+            android:textSize="15dp"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/textcolor"
+            android:id="@+id/radio_postpaid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Postpaid" />
+
+    </RadioGroup>
+
+    <TextView
+        android:text="Total STD &amp; Local Call"
+        android:layout_width="wrap_content"
+        android:textSize="12dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView35"
+        android:layout_below="@+id/tv_2g"
+        android:layout_toLeftOf="@+id/tv_3g"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Total Data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView61"
+        android:textSize="12dp"
+        android:layout_above="@+id/tv_progressvalue1"
+        android:layout_toLeftOf="@+id/textView26"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <SeekBar
+
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar_std_local"
+
+        android:progressDrawable="@drawable/green_scrubber_progress"
+        android:thumb="@drawable/thump"
+        android:layout_below="@+id/textView35"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/textView61"
+        android:layout_alignStart="@+id/textView61" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+
+        android:background="@drawable/border_green"
+
+        android:id="@+id/spinner"
+
+
+        android:layout_below="@+id/textView27"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,353 @@
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/vertical_scroll"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f1f2f4"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/layout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+
+            android:background="#f1f2f4"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/layout2"
+            android:layout_alignStart="@+id/layout2"
+            android:layout_alignRight="@+id/layout2"
+            android:layout_alignEnd="@+id/layout2">
+
+
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/linearLayout">
+
+
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:shrinkColumns="*"  android:stretchColumns="*" android:background="#ffffff"
+                >
+
+
+                <TableRow
+
+                    android:background="@drawable/layoutborder"
+                    android:requiresFadingEdge="horizontal"
+                     android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_calldetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+
+
+
+                        android:text="CALL"
+                        android:textColor="#7c5c5c"
+                        android:gravity="center"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:id="@+id/tv_divider1"
+                        android:layout_width="0.5sp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="4dp"
+                        android:background="#7c5c5c"
+                        android:text=" "
+
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_datadetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+
+
+                        android:text="DATA"
+                        android:textColor="@color/sandaldark"
+                        android:gravity="center"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/tv_divider2"
+                        android:layout_width="0.5sp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="4dp"
+                        android:background="#7c5c5c"
+                        android:text=" "
+
+
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/tv_smsdetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+
+                        android:text="SMS"
+                        android:textColor="#7c5c5c"
+                        android:gravity="center"
+                        android:textSize="15sp"/>
+
+                </TableRow>
+
+
+            </TableLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="#ffffff"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/linearLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:text="0 Days Left"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView21"
+                android:textColor="@color/greendark"
+                android:layout_above="@+id/tv_mydatausage"
+                android:layout_alignRight="@+id/progressBar"
+                android:layout_alignEnd="@+id/progressBar"
+                android:layout_alignLeft="@+id/progressBar"
+                android:layout_alignStart="@+id/progressBar" />
+
+            <TextView
+                android:text="0 MB Used"
+                android:textSize="@dimen/activity_horizontal_margin"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/greendark"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:id="@+id/textView37" />
+
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:progress="60"
+                android:indeterminate="false"
+                android:max="100"
+                android:progressDrawable="@drawable/circular_progress_bar2"
+                android:layout_above="@+id/textView21"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="13dp"
+                android:layout_marginStart="13dp" />
+
+            <TextView
+                android:text="My Data Usage"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:background="@color/primary_darker"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/white"
+                android:id="@+id/tv_mydatausage"
+
+
+                android:layout_marginBottom="14dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/textView37"
+                android:layout_toEndOf="@+id/textView37" />
+
+            <TextView
+                android:text="0 Mb Used"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:textColor="@color/greendark"
+                android:id="@+id/textView39"
+                            android:gravity="center"
+
+                android:layout_marginRight="21dp"
+                android:layout_marginEnd="21dp"
+                android:layout_above="@+id/textView21"
+                android:layout_marginLeft="40dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginBottom="64dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:layout_below="@+id/textView23"
+            android:layout_alignLeft="@+id/layout1"
+            android:layout_alignStart="@+id/layout1">
+
+
+            <ProgressBar
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="23dp"
+
+                android:background="@color/sandallight"
+                android:progressDrawable="@drawable/progressbar_horizontal2"
+
+                android:id="@+id/progressBar2"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layerType="none"
+                android:scrollbarSize="20dp" />
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="23dp"
+                android:layout_height="30dp"
+                android:id="@+id/progressBar4"
+                android:background="@color/sandallight"
+                android:progressDrawable="@drawable/progressbar_horizontal2"
+
+                android:layout_below="@+id/progressBar2"
+                android:layout_alignRight="@+id/progressBar2"
+                android:layout_alignEnd="@+id/progressBar2"
+                android:layout_alignLeft="@+id/progressBar2"
+                android:layout_alignStart="@+id/progressBar2" />
+            <TextView
+                android:background="#00000000"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:id="@+id/tv_dataused"
+                android:text="650 MB used"
+                android:layout_alignLeft="@id/progressBar2"
+                android:layout_alignTop="@id/progressBar2"
+                android:layout_alignRight="@id/progressBar2"
+                android:layout_alignBottom="@id/progressBar2"
+                />
+            <TextView
+                android:background="#00000000"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:id="@+id/tv_dataremaining"
+                android:text="0 MB Remaining"
+                android:layout_alignLeft="@id/progressBar4"
+                android:layout_alignTop="@id/progressBar4"
+                android:layout_alignRight="@id/progressBar4"
+                android:layout_alignBottom="@id/progressBar4"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:text="Data Plans"
+            android:textSize="20dp"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout2"
+            android:id="@+id/textView38"
+            android:layout_alignLeft="@+id/textView23"
+            android:layout_alignStart="@+id/textView23" />
+
+        <RelativeLayout
+            android:id="@+id/layout_recommded_recharge_now"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:layout_below="@+id/textView38"
+            android:layout_alignLeft="@+id/textView38"
+            android:layout_alignStart="@+id/textView38"
+            android:layout_alignRight="@+id/layout1"
+            android:layout_alignEnd="@+id/layout1">
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/viewpager1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1000dp"
+
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginStart="1dp"
+                        android:layout_below="@+id/tabs1" />
+
+                    <android.support.design.widget.TabLayout
+                        android:id="@+id/tabs1"
+                        android:theme="@style/Theme.AppCompat.Light"
+                        android:layout_width="match_parent"
+                        android:layout_height="26dp"
+                        app:tabMode="scrollable"
+                        app:tabGravity="center"
+                        tools:ignore="UnknownId"
+
+
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+                </RelativeLayout>
+            </ScrollView>
+
+        </RelativeLayout>
+
+        <TextView
+            android:text="Data Usage"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView23"
+            android:layout_below="@+id/layout1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp" />
+
+
+    </RelativeLayout>
+</ScrollView>

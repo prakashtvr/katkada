@@ -1,0 +1,308 @@
+
+
+<!-- TODO: Update blank fragment layout -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        android:orientation="vertical"
+
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.admin.kadkada.com.katkada.Fragment.Recharge"
+        android:weightSum="1">
+
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/table1"
+            >
+
+
+            <TableRow   android:paddingTop="10px" android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_span="2"
+                    android:text="Recomendation"
+                    android:textColor="#890000"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content" />
+
+            </TableRow>
+
+
+            <TableRow android:gravity="center" android:layout_marginTop="20dip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <RadioGroup
+                    android:id="@+id/radioGroup1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radioAndroid"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rbtn_selector"
+                        android:button="@null"
+                        android:checked="true"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Prepaid"
+                        android:textColor="@drawable/rbtn_textcolor_selector" />
+
+                    <RadioButton
+                        android:id="@+id/radioiPhone"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rbtn_selector"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Postpaid"
+                        android:textColor="@drawable/rbtn_textcolor_selector" />
+
+
+                </RadioGroup>
+            </TableRow>
+
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radio2G"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rbtn_selector"
+                    android:button="@null"
+                    android:checked="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="2G"
+                    android:textColor="@drawable/rbtn_textcolor_selector" />
+
+                <RadioButton
+                    android:id="@+id/radio3G"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rbtn_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="3G"
+                    android:textColor="@drawable/rbtn_textcolor_selector" />
+                <RadioButton
+                    android:id="@+id/radio4G"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rbtn_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="4G"
+                    android:textColor="@drawable/rbtn_textcolor_selector" />
+
+
+            </RadioGroup>
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:stretchColumns="*"
+
+            android:layout_height="wrap_content"
+            android:id="@+id/table4"
+            >
+        <TableRow android:layout_marginTop="10dip"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+
+                android:layout_width="wrap_content"
+
+                android:layout_span="1"
+                android:text="Region"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+
+                android:layout_span="1"
+                android:text="   Operators"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView17" />
+         </TableRow>
+
+            <TableRow android:layout_marginTop="10dip"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Spinner
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner_Region" />
+
+                <Spinner
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner_operator" />
+
+
+                </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/table2"
+            >
+
+            <TableRow android:layout_marginTop="10dip"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dip"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:stretchColumns="*"
+            android:layout_height="wrap_content"
+            android:id="@+id/table3"
+            >
+
+            <TableRow android:layout_marginTop="10dip"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="10dp">
+
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:layout_width="wrap_content"
+                    android:id="@+id/ripple_effect2"
+                    android:layout_height="match_parent"
+
+
+
+                    app:mrl_rippleOverlay="true"
+                    app:mrl_rippleColor="#43bca8"
+                    app:mrl_rippleAlpha="0.2"
+                    app:mrl_rippleDelayClick="false"
+                    app:mrl_rippleHover="true"></com.balysv.materialripple.MaterialRippleLayout>
+            </TableRow>
+
+
+            <TableRow android:layout_marginTop="20dip"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dip"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="10dp">
+
+
+
+            </TableRow>
+
+
+
+        </TableLayout>
+        <FrameLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#fff"
+            android:elevation="6dp"
+            android:layout_weight="0.14">
+
+
+
+        </FrameLayout>
+
+
+
+        <FrameLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#fff"
+            android:elevation="6dp"
+            android:layout_weight="0.14">
+
+
+
+        </FrameLayout>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/tv_Browse_Packs"
+            android:text="Search Packs"
+            android:textColor="@color/BorderCOlor"
+            android:textSize="15sp"
+            android:textStyle="bold"
+
+            android:layout_height="wrap_content"
+            android:padding="10dp" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+
+
+
+
+

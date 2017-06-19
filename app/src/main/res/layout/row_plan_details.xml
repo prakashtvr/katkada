@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/opt_name"
+        android:text="Operator"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_alignParentTop="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_weight="0.13">
+
+
+        <TextView
+            android:text="More"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+
+            android:layout_below="@+id/textView46"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="12dp"
+            android:layout_marginEnd="12dp"
+            android:id="@+id/textView50"
+             />
+
+        <TextView
+            android:text="Rs. 100"
+            android:gravity="center"
+            android:textColor="@color/primary_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView50"
+            android:layout_toLeftOf="@+id/textView50"
+            android:layout_below="@+id/textView46"
+            android:layout_toStartOf="@+id/textView50"
+            android:layout_marginRight="11dp"
+            android:layout_marginEnd="11dp"
+            android:id="@+id/textView52" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/ic_call"
+            android:id="@+id/imageView16"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Vodafone - "
+            android:textColor="@color/textcolor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView53"
+            android:layout_alignBaseline="@+id/textView46"
+            android:layout_alignBottom="@+id/textView46"
+            android:layout_alignLeft="@+id/textView49"
+            android:layout_alignStart="@+id/textView49" />
+
+        <TextView
+            android:text="Special Roaming Tarif Plan \n for selected operator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView46"
+            android:textColor="@color/textcolor"
+            android:layout_alignTop="@+id/imageView16"
+            android:layout_toRightOf="@+id/textView53"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_alignRight="@+id/textView50"
+            android:layout_alignEnd="@+id/textView50" />
+
+        <TextView
+            android:text="1 Month"
+            android:gravity="center"
+            android:textColor="@color/primary_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView49"
+            android:layout_below="@+id/textView46"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp"
+            android:layout_toRightOf="@+id/imageView16"
+            android:layout_alignBottom="@+id/imageView16" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutViewMore"
+        android:animateLayoutChanges="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:text="Estimated Monthly Usage Charge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView54"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="- -"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView54"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/textView55" />
+
+        <TextView
+            android:textColor="@color/textcolor"
+            android:text="Rs. 10.4"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/textView56"
+            android:layout_below="@+id/textView57" />
+
+        <TextView
+            android:layout_marginRight="12dp"
+            android:layout_marginEnd="12dp"
+            android:textColor="@color/textcolor"
+            android:text="Estimated Monthly Cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView58"
+            android:layout_below="@+id/textView55"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:text="Service Tax"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/textcolor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView57"
+            android:layout_below="@+id/textView55"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Rs 100"
+            android:textColor="@color/primary_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="55dp"
+            android:id="@+id/textView60"
+            android:layout_alignRight="@+id/textView58"
+            android:layout_alignEnd="@+id/textView58" />
+
+        <TextView
+            android:text="Buy Plan"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView62"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/textView60"
+            android:layout_alignRight="@+id/textView60"
+            android:layout_alignEnd="@+id/textView60" />
+
+    </RelativeLayout>
+</LinearLayout>

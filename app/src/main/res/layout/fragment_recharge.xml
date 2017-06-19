@@ -1,0 +1,259 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    app:layout_collapseParallaxMultiplier="0.8">
+
+    <LinearLayout
+          android:layout_marginBottom="@dimen/activity_horizontal_margin"
+          android:paddingBottom="@dimen/activity_horizontal_margin"
+          android:layout_marginTop="@dimen/activity_horizontal_margin"
+          android:orientation="vertical"
+          android:background="@color/white"
+
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="@dimen/activity_horizontal_margin"
+         android:layout_marginRight="@dimen/activity_horizontal_margin"
+         android:weightSum="1">
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        </RelativeLayout>
+
+
+        <RadioGroup
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:id="@+id/radiotype1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+
+            android:orientation="horizontal"
+
+            android:layout_below="@+id/textView26"
+            >
+
+
+            <RadioButton
+                android:id="@+id/radio_prepaid"
+                android:text="Prepaid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/primary_darker"
+
+                android:textSize="20dp"
+
+
+
+                android:checked="true"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_weight="0.5" />
+
+            <RadioButton
+                android:buttonTint="@color/primary_darker"
+                android:textSize="20dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+
+                android:id="@+id/radio_postpaid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Postpaid" />
+
+        </RadioGroup>
+
+        <android.support.design.widget.TextInputLayout
+
+            android:id="@+id/input_layout_name"
+            android:layout_width="match_parent"
+            android:paddingTop="5dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            >
+
+            <EditText
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+
+
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:inputType="numberDecimal"
+
+                  android:hint="Enter Mobile No"
+                android:ems="10"
+
+                android:id="@+id/editText_MobileNo"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+        <Spinner
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+
+
+            android:id="@+id/spinner_operator" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+
+            android:paddingTop="5dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/label_static_gray"
+            />
+
+        <Spinner
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+
+
+            android:id="@+id/spinner_Region" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+             android:background="@color/label_static_gray"
+            />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+
+            android:id="@+id/input_layout_value"
+            android:layout_width="match_parent"
+            android:paddingTop="5dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            >
+        <EditText
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+
+            android:cursorVisible="false"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:inputType="number"
+
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+
+            android:hint="Enter Amount"
+            android:gravity="start|center"
+            android:ems="11"
+
+            android:id="@+id/editValue"
+            />
+       </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/tv_Browse_Packs"
+            android:text="Browse Packs >"
+          android:background="@drawable/layout_background"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:layout_height="wrap_content"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/textViewcoupon"
+            android:textColor="@color/greendark"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:text="@string/have_coupon"/>
+        <android.support.design.widget.TextInputLayout
+
+            android:id="@+id/input_layout_Coupon"
+            android:layout_width="match_parent"
+            android:paddingTop="5dp"
+            android:layout_gravity="center"
+
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/textViewApplycoupon"
+                android:textColor="@color/white"
+                android:background="@drawable/button_background_new"
+                   android:text="Apply "/>
+
+            <EditText
+
+                android:cursorVisible="true"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:id="@+id/editText_CouponCode"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+
+                android:layout_height="40sp"
+                android:layout_gravity="center"
+                android:hint="Enter Coupon Code"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:text="Recharge"
+            android:textColor="#ffffff"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:textSize="30sp"
+
+            android:layout_gravity="center"
+            android:layout_width="178dp"
+            android:layout_height="60dp"
+            android:background="@drawable/button_background_new"
+
+
+            android:id="@+id/button_rechrge"
+            />
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+
+
+
+
+

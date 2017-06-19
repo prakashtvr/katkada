@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+    <TextView
+        android:text="Talk Time"
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|start"
+android:visibility="gone"
+        android:textSize="16sp"
+        android:layout_weight="1.2"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:padding="4dp"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:weightSum="1">
+
+            <TextView
+                android:text="Plan Name"
+                android:layout_width="241dp"
+                android:layout_height="match_parent"
+           android:gravity="center|start"
+                android:id="@+id/textView3"
+android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:textSize="14sp"
+                android:textColor="@color/list_divider"
+                android:layout_weight="0.78" />
+
+            <TextView
+                android:text="RS. "
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_weight="0.02"
+android:gravity="center|start"
+                android:textColor="@android:color/holo_blue_dark"
+                android:id="@+id/textView65" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:text="PRICE"
+                android:gravity="center|start"
+                android:layout_gravity="right"
+                android:layout_height="match_parent"
+                android:layout_width="100dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_weight="0.2"
+
+                android:textColor="@android:color/holo_blue_dark">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:padding="4dp"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:weightSum="1">
+
+            <TextView
+                android:text="Validity"
+                android:gravity="center|start"
+                android:layout_width="211dp"
+                android:layout_height="match_parent"
+                android:id="@+id/textView4"
+                android:textSize="16sp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+         android:textColor="@color/textcolor"
+                android:layout_weight="0.78" />
+
+            <TextView
+                android:text="Recharge"
+                android:layout_width="100dp"
+    android:layout_gravity="right"
+                android:textColor="@color/list_divider"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="4dp"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:background="@drawable/border_green"
+                android:id="@+id/tv_buyplan"
+android:layout_marginRight="30dp"
+
+                android:layout_weight="0.18" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

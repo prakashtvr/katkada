@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="#ffffff"
+    android:scrollbars="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/header"
+        android:gravity="center"
+        android:background="#566573"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:textSize="20sp"
+            android:text="Customer Name"
+            android:layout_width="200dp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_cus_name" />
+        <TextView
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:textSize="20sp"
+            android:text="Email id"
+            android:layout_width="300dp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_email" />
+
+        <TextView
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:textSize="20sp"
+            android:text="Mobile No"
+            android:layout_width="200dp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_mobile" />
+
+        <TextView
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:textSize="20sp"
+            android:text="Connection Type"
+            android:textColor="@color/white"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_con_type" />
+
+        <TextView
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:textSize="20sp"
+            android:text="Request Date"
+            android:layout_width="250dp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_req_date" />
+        <TextView
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:textSize="20sp"
+            android:text="Status"
+            android:textColor="@color/white"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_status" />
+
+
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_below="@+id/header"
+        android:layout_height="match_parent"
+        android:id="@+id/listViewPostpaidrequest"
+        android:dividerHeight="1dp"
+        android:background="#ffffff"
+
+        android:divider="#e4e4ef"
+        android:layout_width="match_parent">
+    </ListView>
+    </LinearLayout>
+</HorizontalScrollView>

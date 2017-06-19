@@ -1,0 +1,121 @@
+package com.katkada.Other;
+/**
+ * Created by prakash on 23-03-2017.
+ */
+public class AndyConstants {
+    public static final String URL = "url";
+    public static final String ERROR_CODE_PREFIX = "error_";
+    public class Params {
+        public static final String EMAIL = "email";
+        public static final String PASSWORD = "password";
+        public static final String FIRSTNAME = "first_name";
+        public static final String LAST_NAME = "last_name";
+        public static final String PHONE = "phone";
+        public static final String DEVICE_TOKEN = "device_token";
+        public static final String DEVICE_TYPE = "device_type";
+        public static final String BIO = "bio";
+        public static final String ADDRESS = "address";
+        public static final String STATE = "state";
+        public static final String COUNTRY = "country";
+        public static final String ZIPCODE = "zipcode";
+        public static final String TAXI_MODEL = "car_model";
+        public static final String TAXI_NUMBER = "car_number";
+        public static final String IC_TYPE = "ic_type";
+        public static final String TIMEZONE = "timezone";
+        public static final String LOGIN_BY = "login_by";
+        public static final String SOCIAL_UNIQUE_ID = "social_unique_id";
+        public static final String PICTURE = "picture";
+        public static final String PICTURE_DOC = "id_card";
+        public static final String ID = "id";
+        public static final String TOKEN = "token";
+        public static final String REQUEST_ID = "request_id";
+        public static final String ACCEPTED = "accepted";
+        public static final String LATITUDE = "latitude";
+        public static final String LONGITUDE = "longitude";
+        public static final String DISTANCE = "distance";
+        public static final String BEARING = "bearing";
+        public static final String COMMENT = "comment";
+        public static final String RATING = "rating";
+        public static final String INCOMING_REQUESTS = "incoming_requests";
+        public static final String TIME_LEFT_TO_RESPOND = "time_left_to_respond";
+        public static final String REQUEST = "request";
+        public static final String REQUESTS = "requests";
+        public static final String REQUEST_DATA = "request_data";
+        public static final String NAME = "name";
+        public static final String NUM_RATING = "num_rating";
+        public static final String OWNER = "owner";
+        public static final String WALKER = "walker";
+        public static final String UNIQUE_ID = "unique_id";
+        public static final String TITLE = "title";
+        public static final String CONTENT = "content";
+        public static final String INFORMATIONS = "informations";
+        public static final String IS_ACTIVE = "is_active";
+        public static final String ICON = "icon";
+        public static final String TYPE = "type";
+        public static final String DISTANCE_COST = "distance_cost";
+        public static final String TIME_COST = "time_cost";
+        public static final String TOTAL = "total";
+        public static final String IS_PAID = "is_paid";
+        public static final String TIME = "time";
+        public static final String DATE = "date";
+        public static final String LOCATION_DATA = "locationdata";
+        public static final String START_TIME = "start_time";
+        public static final String PAYMENT_TYPE = "payment_type";
+        public static final String IS_APPROVED = "is_approved";
+        public static final String IS_CANCELLED = "is_cancelled";
+        public static final String OLD_PASSWORD = "old_password";
+        public static final String NEW_PASSWORD = "new_password";
+        public static final String CAR_NUMBER = "car_number";
+        public static final String CAR_MODEL = "car_model";
+        public static final String REFERRAL_BONUS = "referral_bonus";
+        public static final String PROMO_BONUS = "promo_bonus";
+        public static final String UNIT = "unit";
+        public static final String DESTINATION_LATITUDE = "dest_latitude";
+        public static final String DESTINATION_LONGITUDE = "dest_longitude";
+        public static final String FROM_DATE = "from_date";
+        public static final String TO_DATE = "to_date";
+        public static final String SOURCE_LAT = "start_lat";
+        public static final String SOURCE_LONG = "start_long";
+        public static final String DEST_LAT = "end_lat";
+        public static final String DEST_LONG = "end_long";
+        public static final String MAP_URL = "map_url";
+        public static final String SRC_ADD = "src_address";
+        public static final String DEST_ADD = "dest_address";
+        public static final String CURRENCY = "currency";
+        public static final String DEST_ADDRESS = "dest_address";
+
+        public static final String ICARD_FRONT = "id_card_front";
+        public static final String ICARD_BACK = "id_card_back";
+        public static final String SIGNATURE= "signature_image";
+    }
+
+    public class ServiceCode {
+        public static final int LOADOPERATORS_URL = 1;
+        public static final int LOGIN = 2;
+        public static final int GET_ALL_REQUEST = 3;
+        public static final int RESPOND_REQUEST = 4;
+        public static final int CHECK_REQUEST_STATUS = 5;
+        public static final int REQUEST_IN_PROGRESS = 6;
+        public static final int WALKER_STARTED = 7;
+        public static final int WALKER_ARRIVED = 8;
+        public static final int WALK_STARTED = 9;
+        public static final int WALK_COMPLETED = 10;
+        public static final int RATING = 11;
+        public static final int GET_ROUTE = 12;
+        public static final int APPLICATION_PAGES = 13;
+        public static final int UPDATE_PROFILE = 14;
+        public static final int GET_VEHICAL_TYPES = 16;
+        public static final int FORGET_PASSWORD = 17;
+        public static final int HISTORY = 18;
+        public static final int CHECK_STATE = 19;
+        public static final int TOGGLE_STATE = 20;
+        public static final int PATH_REQUEST = 21;
+        public static final int DRAW_PATH_ROAD = 22;
+        public static final int DRAW_PATH = 23;
+        public static final int LOGOUT = 24;
+        public static final int DRAW_PATH_CLIENT = 25;
+        public static final int GET_DURATION = 26;
+        public static final int DOCUMENTS = 27;
+        public static final int DECLINE_REASON = 28;
+    }
+}

@@ -1,0 +1,593 @@
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+<ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+    <RelativeLayout
+        android:id="@+id/layout"
+         android:layout_width="match_parent"
+        android:layout_height="1150sp"
+        android:background="#f1f2f4"
+        >
+ <RelativeLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="#ffffff"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:text="Katkada helps you compare and choose  \n   the right plan/pack/rate-cutter within \n your operator and across all operators."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView22"
+                android:textColor="#a4a6a8"
+                android:layout_below="@+id/textView21"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="11dp" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:srcCompat="@drawable/profile_image"
+                android:id="@+id/imageView5"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp" />
+
+            <TextView
+                android:text="Techzar info"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView21"
+                android:textColor="@color/BorderCOlor"
+                android:layout_below="@+id/imageView5"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:text="MY PROFILE"
+            android:textColor="@color/greendark"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView23"
+            android:layout_below="@+id/layout1"
+            android:layout_alignLeft="@+id/layout1"
+            android:layout_alignStart="@+id/layout1" />
+
+
+        <RelativeLayout
+            android:id="@+id/layout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+android:layout_below="@+id/layout_browse_packs"
+            android:background="#f1f2f4"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/layout2"
+            android:layout_alignStart="@+id/layout2"
+            android:layout_alignRight="@+id/layout2"
+            android:layout_alignEnd="@+id/layout2">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:stretchColumns="*"
+                >
+                <TableRow
+                    android:layout_marginBottom="2dp">
+
+                    <RelativeLayout
+
+                        android:layout_marginRight="2dp"
+                        android:layout_height="165dp"
+                        android:id="@+id/layout_calls"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/layout_background"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="10dp">
+
+                        <ImageView
+                            android:layout_marginTop="30dp"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:padding="15dp"
+                            android:background="@drawable/ellipse"
+                            app:srcCompat="@drawable/ic_call"
+                            android:id="@+id/imageView6"
+                            android:layout_centerHorizontal="true"
+                            />
+
+                        <TextView
+                            android:text="0 MINS"
+                            android:textSize="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#a4a6a8"
+                            android:id="@+id/tv_calls"
+                            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/textView29"
+                            />
+
+                        <TextView
+                            android:text="CALL"
+                            android:textSize="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:id="@+id/textView29"
+                            android:layout_below="@+id/imageView6"
+                            android:layout_alignLeft="@+id/tv_calls"
+                            android:layout_alignStart="@+id/tv_calls" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="165dp"
+                        android:id="@+id/layout_Roaming"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/layout_background"
+                        >
+
+                        <TextView
+                            android:text="ROAMING"
+                            android:textSize="15dp"
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/imageView2"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/textViewroam" />
+
+                        <TextView
+                            android:gravity="center"
+                            android:text="0 Mins"
+                            android:textColor="#a4a6a8"
+                            android:textSize="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_roaming"
+                            android:layout_below="@+id/textViewroam"
+                            android:layout_centerHorizontal="true" />
+
+                        <ImageView
+                            android:layout_marginTop="30dp"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:padding="15dp"
+                            android:background="@drawable/ellipse"
+                            app:srcCompat="@drawable/ic_call"
+                            android:id="@+id/imageView2"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignLeft="@+id/textViewroam"
+                            android:layout_alignStart="@+id/textViewroam" />
+                    </RelativeLayout>
+                </TableRow>
+
+                <TableRow android:layout_marginTop="2dp"
+                    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                    >
+                    <RelativeLayout
+
+                        android:layout_marginRight="1.5dp"
+                        android:layout_height="165dp"
+                        android:id="@+id/layout_sms"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/layout_background"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true">
+                        <ImageView
+                            android:layout_marginTop="30dp"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:padding="15dp"
+                            android:background="@drawable/ellipse"
+                            app:srcCompat="@drawable/ic_smsdetail"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/imageView3"
+                            />
+
+                        <TextView
+                            android:gravity="center"
+                            android:text="0 Mins"
+                            android:textColor="#a4a6a8"
+                            android:textSize="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_sms"
+                            android:layout_below="@+id/textViewroam1"
+                            android:layout_centerHorizontal="true" />
+
+                        <TextView
+                            android:text="SMS"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textViewroam1"
+                            android:layout_below="@+id/imageView3"
+                            android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginLeft="2dp"
+                        android:layout_height="165dp"
+                        android:id="@+id/layout_data"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/layout_background"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true">
+                        <ImageView
+                            android:layout_marginTop="30dp"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:padding="15dp"
+                            android:background="@drawable/ellipse"
+                            app:srcCompat="@drawable/ic_dataplan"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/imageView4"
+                            />
+
+                        <TextView
+                            android:text="DATA"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/imageView4"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/textViewdata" />
+
+                        <TextView
+                            android:gravity="center"
+                            android:text="0 MB"
+                            android:textColor="#a4a6a8"
+                            android:textSize="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_data"
+                            android:layout_below="@+id/textViewdata"
+                            android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                </TableRow>
+
+            </TableLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/layout_recharge_now"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/layout_background"
+           android:layout_below="@+id/layout2"
+
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+             android:layout_alignRight="@+id/layout2"
+            android:layout_alignEnd="@+id/layout2"
+            android:layout_alignLeft="@+id/layout2"
+            android:layout_alignStart="@+id/layout2">
+            <TextView
+                android:text="Recharge Now"
+
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/imageView8"
+                android:layout_centerInParent="true"
+                android:id="@+id/textView_29"
+                android:layout_centerVertical="true"
+
+                />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/ellipse4"
+                android:padding="15dp"
+                app:srcCompat="@drawable/ic_call"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_centerInParent="true"
+                android:id="@+id/imageView8"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_recommded_plans"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+
+            android:background="@drawable/layout_background"
+            android:layout_below="@+id/layout_recharge_now"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+               android:layout_alignRight="@+id/layout_recharge_now"
+            android:layout_alignEnd="@+id/layout_recharge_now"
+            android:layout_alignLeft="@+id/layout_recharge_now"
+            android:layout_alignStart="@+id/layout_recharge_now">
+
+
+            <TextView
+                android:text="Recommended Plans"
+
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+             android:layout_below="@+id/imageView7"
+                android:id="@+id/textView20"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/ellipse4"
+                android:padding="15dp"
+             app:srcCompat="@drawable/ic_recomendation1"
+                android:layout_centerVertical="true"
+                android:id="@+id/imageView7"
+                android:layout_centerInParent="true"
+  />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#ffffff"
+
+            android:layout_below="@+id/textView23"
+            android:layout_alignLeft="@+id/textView23"
+            android:layout_alignStart="@+id/textView23"
+            android:layout_alignRight="@+id/layout1"
+            android:layout_alignEnd="@+id/layout1">
+
+
+
+            <TextView
+                android:text="Data Usage"
+                android:textSize="20sp"
+
+                android:textColor="@color/greendark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+
+                android:layout_centerHorizontal="true"
+                android:id="@+id/textView25" />
+
+
+            <TextView
+                android:paddingLeft="8dp"
+                android:text="     0      "
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView27"
+                android:layout_below="@+id/textView26"
+                android:layout_marginTop="11dp"
+                android:layout_alignLeft="@+id/textView26"
+                android:layout_alignStart="@+id/textView26" />
+
+            <TextView
+                android:text="SMS"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView30"
+                android:layout_alignBottom="@+id/textView26"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/textView26"
+                android:layout_toRightOf="@+id/progressBar"
+                android:layout_toEndOf="@+id/progressBar" />
+
+            <TextView
+                android:paddingLeft="8dp"
+                android:text="CALL"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView26"
+                android:layout_marginTop="51dp"
+                android:layout_alignTop="@+id/progressBar" />
+
+            <TextView
+                android:text="0"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView31"
+                android:layout_above="@+id/textView28"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/progressBar"
+                android:layout_toEndOf="@+id/progressBar" />
+
+            <TextView
+                android:paddingLeft="8dp"
+                android:text="Calls Left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView28"
+                android:layout_below="@+id/textView27"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:progress="60"
+                android:indeterminate="false"
+                android:max="100"
+                android:progressDrawable="@drawable/circular_progress_bar"
+
+
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:text="Sms Left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView32"
+                android:layout_toRightOf="@+id/progressBar"
+                android:layout_marginLeft="17dp"
+                android:layout_marginStart="17dp"
+                android:layout_below="@+id/textView31"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_browse_packs"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/layout_background"
+
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/layout_recommded_plans"
+            android:layout_alignLeft="@+id/layout_recommded_plans"
+            android:layout_alignStart="@+id/layout_recommded_plans"
+            android:layout_alignRight="@+id/layout_recommded_plans"
+            android:layout_alignEnd="@+id/layout_recommded_plans">
+
+            <TextView
+            android:text="Browse Packs  &amp; Plans"
+
+              android:layout_below="@+id/imageView_browse"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/black"
+            android:id="@+id/textView24"
+
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:background="@drawable/ellipse4"
+                android:padding="15dp"
+                app:srcCompat="@drawable/ic_browseplan1"
+                android:id="@+id/imageView_browse"
+              android:layout_centerInParent="true"/>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</ScrollView>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/material_design_android_floating_action_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        app:backgroundTint="@color/colorPrimary"
+
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        fab:menu_animationDelayPerItem="55"
+        fab:menu_backgroundColor="@android:color/transparent"
+        fab:menu_buttonSpacing="0dp"
+        fab:menu_colorNormal="#3ba7bf"
+        fab:menu_colorPressed="#3a97ac"
+        fab:menu_colorRipple="#99d4d4d4"
+        fab:menu_fab_label="Quick Launcher"
+        fab:menu_fab_size="normal"
+        fab:menu_icon="@drawable/fab_add"
+        fab:menu_labels_colorNormal="#3a97ac"
+        fab:menu_labels_colorPressed="#444"
+        fab:menu_labels_colorRipple="#66efecec"
+        fab:menu_labels_cornerRadius="3dp"
+        fab:menu_labels_ellipsize="none"
+        fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        fab:menu_labels_margin="0dp"
+        fab:menu_labels_maxLines="1"
+        fab:menu_labels_padding="8dp"
+        fab:menu_labels_position="left"
+        fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+        fab:menu_labels_showShadow="true"
+        fab:menu_labels_singleLine="false"
+        fab:menu_labels_textColor="#f2f1f1"
+        fab:menu_labels_textSize="10sp"
+        fab:menu_openDirection="up"
+        fab:menu_shadowColor="#ffffff"
+        fab:menu_shadowRadius="4dp"
+        fab:menu_shadowXOffset="1dp"
+        fab:menu_shadowYOffset="4dp"
+        fab:menu_showShadow="true">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_wallet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/ellipse3"
+            android:src="@drawable/ic_call"
+            fab:fab_label="Wallet Amount"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_recharge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/ellipse3"
+            android:src="@drawable/ic_call"
+            fab:fab_label="Quick Recharge"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_recommendation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ellipse4"
+            android:src="@drawable/ic_recomendation1"
+
+            fab:fab_label="Recommendation"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_search_plans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ellipse"
+            android:src="@drawable/ic_browseplan1"
+            fab:fab_label="Browse Packs &amp; Plans"
+            fab:fab_size="mini" />
+    </com.github.clans.fab.FloatingActionMenu>
+    </RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:textSize="20sp"
+            android:text="Customer Name"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_cus_name" />
+        <TextView
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:textSize="20sp"
+            android:text="Email id"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_email" />
+
+        <TextView
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:textSize="20sp"
+            android:text="Mobile No"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_mobile" />
+
+        <TextView
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:textSize="20sp"
+            android:text="Connection Type"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_con_type" />
+
+        <TextView
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:textSize="20sp"
+            android:text="Request Date"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_req_date" />
+        <TextView
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:textSize="20sp"
+            android:text="Status"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_status" />
+
+
+
+    </LinearLayout>
+</ScrollView>
+
+

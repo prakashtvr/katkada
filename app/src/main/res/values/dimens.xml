@@ -1,0 +1,69 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="tab_bar_default_height">48dip</dimen>
+    <dimen name="segmented_control_default_height">41dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="profile_width">150dp</dimen>
+    <dimen name="profile_height">75dp</dimen>
+
+    <dimen name="tab_max_width">264dp</dimen>
+    <dimen name="tab_padding_bottom">16dp</dimen>
+    <dimen name="tab_label">14sp</dimen>
+    <dimen name="custom_tab_layout_height">72dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+
+    <dimen name="drawer_font_size">15.0sp</dimen>
+    <dimen name="ub_view_margin">10.0dip</dimen>
+    <dimen name="ub_search_padding_medium">16.0dip</dimen>
+    <dimen name="ub_textsize_search_small">12.0sp</dimen>
+    <dimen name="ub_textsize_search_big">15.0sp</dimen>
+    <dimen name="image_type_height_width">60dp</dimen>
+    <dimen name="ub_textsize_huge">60.0sp</dimen>
+    <dimen name="ub_textsize_extra_big">40.0sp</dimen>
+    <dimen name="ub_textsize_big">35.0sp</dimen>
+    <dimen name="ub_textsize_medium">18.0sp</dimen>
+    <dimen name="ub_textsize_small">13.0sp</dimen>
+    <dimen name="margin_left_right_bill">20dip</dimen>
+
+
+    <dimen name="dots_height">30dp</dimen>
+    <dimen name="dots_margin_bottom">20dp</dimen>
+    <dimen name="img_width_height">120dp</dimen>
+    <dimen name="slide_title">30dp</dimen>
+    <dimen name="slide_desc">16dp</dimen>
+    <dimen name="desc_padding">40dp</dimen>
+
+    <dimen name="size_label">11.68sp</dimen>
+    <dimen name="size_label_dialog">12.68sp</dimen>
+    <dimen name="size_general_small">14.6sp</dimen>
+    <dimen name="size_general">17.52sp</dimen>
+    <dimen name="size_menu_name">20.44sp</dimen>
+    <dimen name="size_dialog_small">21.9sp</dimen>
+    <dimen name="size_name">25.21sp</dimen>
+    <dimen name="size_dialog_notification">28.08sp</dimen>
+    <dimen name="size_price">29.20sp</dimen>
+    <dimen name="size_eta_minfare">30.44sp</dimen>
+    <dimen name="size_referral_code">33.3sp</dimen>
+    <!-- <dimen name="size_dialog_big">42.31sp</dimen> -->
+    <dimen name="size_dialog_big">38sp</dimen>
+    <dimen name="size_bill_total">47.84sp</dimen>
+    <!-- Newly Added for Referral -->
+    <dimen name="dimen_referral_margin_top">40dp</dimen>
+    <dimen name="dimen_referral_margin_bottom">30dp</dimen>
+
+    <!-- Newly Added for Dialog Screens -->
+    <dimen name="dimen_dialog_text">35sp</dimen>
+
+    <!-- Newly Added for map Screens -->
+    <dimen name="dimen_type_margin">38dp</dimen>
+
+
+</resources>

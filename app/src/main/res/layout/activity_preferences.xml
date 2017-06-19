@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/vertical_scroll"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+
+
+    <RelativeLayout
+
+
+        android:id="@+id/activity_profile_detail"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="0dp"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/balancenotification"
+            android:background="@color/white"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+
+            <TextView
+                android:text="Show Notification when curren balance changes"
+                android:textColor="@color/textcolor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                android:paddingRight="2dp"
+                android:layout_below="@+id/textView45"
+                android:layout_alignLeft="@+id/textView45"
+                android:layout_alignStart="@+id/textView45"
+                android:layout_toLeftOf="@+id/checkBox"
+                android:layout_toStartOf="@+id/checkBox" />
+
+            <CheckBox
+                android:layout_marginRight="10dp"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox"
+                android:layout_below="@+id/textView45"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:text="Balance Notification"
+                android:textColor="@color/textcolor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="12dp"
+                android:textSize="20sp"
+                android:id="@+id/textView45"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/trackDataRoaming"
+            android:layout_below="@+id/balancenotification"
+
+            android:background="@color/white"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+
+            <TextView
+                android:text="Allow 2G/3G/4G Data Usage and Roaming Tracking"
+                android:textColor="@color/textcolor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                android:paddingRight="2dp"
+                android:layout_below="@+id/textViewDataRoaming"
+                android:layout_toLeftOf="@+id/checkBox_trackDataRoaming"
+                android:layout_alignLeft="@+id/textViewDataRoaming"
+                android:layout_alignStart="@+id/textViewDataRoaming" />
+
+            <CheckBox
+                android:layout_marginRight="10dp"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox_trackDataRoaming"
+                android:layout_below="@+id/textViewDataRoaming"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:text="Track Data &amp; Roaming"
+                android:textColor="@color/textcolor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="12dp"
+                android:textSize="20sp"
+                android:id="@+id/textViewDataRoaming"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/allOperator"
+            android:layout_below="@+id/trackDataRoaming"
+
+            android:background="@color/white"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+
+            <TextView
+                android:text="Show plans from all operators or only those from your operator"
+                android:textColor="@color/textcolor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                android:paddingRight="2dp"
+                android:layout_below="@+id/textViewallOperator"
+                android:layout_alignLeft="@+id/textViewallOperator"
+                android:layout_alignStart="@+id/textViewallOperator"
+                android:layout_toLeftOf="@+id/checkBoxallOperator"
+                android:layout_toStartOf="@+id/checkBoxallOperator" />
+
+            <CheckBox
+                android:layout_marginRight="10dp"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBoxallOperator"
+                android:layout_below="@+id/textViewallOperator"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:text="All Operators"
+                android:textColor="@color/textcolor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="12dp"
+                android:textSize="20sp"
+                android:id="@+id/textViewallOperator"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/recomentation"
+            android:layout_below="@+id/allOperator"
+
+            android:background="@color/white"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+
+            <TextView
+                android:text="Turn Recommendation On/Off"
+                android:textColor="@color/textcolor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                android:paddingRight="2dp"
+                android:layout_alignBaseline="@+id/checkBoxrecomentation"
+                android:layout_alignBottom="@+id/checkBoxrecomentation"
+                android:layout_alignLeft="@+id/textViewrecomentation"
+                android:layout_alignStart="@+id/textViewrecomentation"
+                android:layout_toLeftOf="@+id/checkBoxrecomentation"
+                android:layout_toStartOf="@+id/checkBoxrecomentation" />
+
+            <CheckBox
+                android:layout_marginRight="10dp"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBoxrecomentation"
+                android:layout_below="@+id/textViewrecomentation"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:text="Recommendations"
+                android:textColor="@color/textcolor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="12dp"
+                android:textSize="20sp"
+                android:id="@+id/textViewrecomentation"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/dualsim"
+            android:layout_below="@+id/recomentation"
+
+            android:background="@color/white"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+
+            <TextView
+                android:text="Enable Dual sim mode"
+                android:textColor="@color/textcolor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                android:paddingRight="2dp"
+                android:layout_alignBaseline="@+id/checkBoxdualsim"
+                android:layout_alignBottom="@+id/checkBoxdualsim"
+                android:layout_alignLeft="@+id/textView45dualsim"
+                android:layout_alignStart="@+id/textView45dualsim"
+                android:layout_toLeftOf="@+id/checkBoxdualsim"
+                android:layout_toStartOf="@+id/checkBoxdualsim" />
+
+            <CheckBox
+                android:layout_marginRight="10dp"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBoxdualsim"
+                android:layout_below="@+id/textView45dualsim"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:text="Dual sim"
+                android:textColor="@color/textcolor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="12dp"
+                android:textSize="20sp"
+                android:id="@+id/textView45dualsim"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/minBalAlert"
+            android:layout_below="@+id/dualsim"
+
+            android:background="@color/white"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+
+            <TextView
+                android:text="Rs.5"
+                android:textColor="@color/textcolor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                android:paddingRight="2dp"
+                android:layout_alignBaseline="@+id/checkBoxminBalAlert"
+                android:layout_alignBottom="@+id/checkBoxminBalAlert"
+                android:layout_alignLeft="@+id/textView45minBalAlert"
+                android:layout_alignStart="@+id/textView45minBalAlert"
+                android:layout_toLeftOf="@+id/checkBoxminBalAlert"
+                android:layout_toStartOf="@+id/checkBoxminBalAlert" />
+
+            <CheckBox
+                android:layout_marginRight="10dp"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBoxminBalAlert"
+                android:layout_below="@+id/textView45minBalAlert"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:text="Min. Balance Alert"
+                android:textColor="@color/textcolor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="12dp"
+                android:textSize="20sp"
+                android:id="@+id/textView45minBalAlert"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/minDataAlert"
+            android:layout_below="@+id/minBalAlert"
+
+            android:background="@color/white"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+
+            <TextView
+                android:text="50MB"
+                android:textColor="@color/textcolor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                android:paddingRight="2dp"
+                android:layout_alignBaseline="@+id/checkBoxminDataAlert"
+                android:layout_alignBottom="@+id/checkBoxminDataAlert"
+                android:layout_alignLeft="@+id/textView45minDataAlert"
+                android:layout_alignStart="@+id/textView45minDataAlert"
+                android:layout_toLeftOf="@+id/checkBoxminDataAlert"
+                android:layout_toStartOf="@+id/checkBoxminDataAlert" />
+
+            <CheckBox
+                android:layout_marginRight="10dp"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBoxminDataAlert"
+                android:layout_below="@+id/textView45minDataAlert"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:text="Min.Data Alert"
+                android:textColor="@color/textcolor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="12dp"
+                android:textSize="20sp"
+                android:id="@+id/textView45minDataAlert"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

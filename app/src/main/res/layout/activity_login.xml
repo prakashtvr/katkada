@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="@color/white"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+android:layout_margin="@dimen/activity_horizontal_margin"
+
+        android:weightSum="1">
+
+        <ImageView android:src="@drawable/ic_login_screen_image"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.09"
+            android:id="@+id/imageView9" />
+
+        <!-- Email Label -->
+
+        <android.support.design.widget.TextInputLayout
+
+            android:id="@+id/input_layout_name"
+            android:layout_width="match_parent"
+android:padding="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+        <EditText android:id="@+id/input_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="8dp"
+              android:hint="Email or Mobile no"
+            android:layout_weight="1" />
+</android.support.design.widget.TextInputLayout>
+
+        <!-- Password Label -->
+        <android.support.design.widget.TextInputLayout
+            android:padding="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:id="@+id/input_layout_name2"
+            android:layout_width="match_parent"
+         android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+            <EditText android:id="@+id/input_password"
+                android:paddingLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:layout_marginTop="8dp"
+                  android:layout_marginBottom="8dp"
+                android:hint="Password"
+          />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center_horizontal"
+            android:padding="12dp"
+            android:text="SIGN IN"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_background_new" />
+
+        <TextView
+            android:id="@+id/link_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="@string/forgot_password"
+            android:gravity="center"
+            android:textSize="15dip"
+
+            android:textColor="@color/primary_darker"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView android:id="@+id/link_signup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Sign Up"
+            android:gravity="center"
+            android:textSize="15dip"
+            android:textColor="#d27e8e" />
+
+    </LinearLayout>
+</ScrollView>

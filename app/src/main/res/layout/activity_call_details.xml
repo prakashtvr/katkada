@@ -1,0 +1,376 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/vertical_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f1f2f4">
+
+
+        <RelativeLayout
+            android:id="@+id/layout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/layout2"
+
+            android:layout_alignLeft="@+id/layout2"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/layout2"
+            android:layout_alignStart="@+id/layout2"
+            android:layout_marginBottom="20dp"
+            android:background="#f1f2f4">
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignEnd="@+id/layout1"
+            android:layout_alignLeft="@+id/layout1"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/layout1"
+            android:layout_alignStart="@+id/layout1"
+            android:orientation="vertical">
+
+
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="#ffffff"
+                android:shrinkColumns="*"
+                android:stretchColumns="*">
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:background="@drawable/layoutborder"
+                    android:gravity="center"
+                    android:requiresFadingEdge="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_datadetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+
+
+                        android:gravity="center"
+                        android:text="DATA"
+                        android:textColor="#7c5c5c"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_divider1"
+                        android:layout_width="0.5sp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="4dp"
+                        android:background="#7c5c5c"
+                        android:text=" "
+
+
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/tv_calldetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+
+
+                        android:gravity="center"
+                        android:text="CALL"
+                        android:textColor="@color/greendark"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_divider2"
+                        android:layout_width="0.5sp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="4dp"
+                        android:background="#7c5c5c"
+                        android:text=" "
+
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_smsdetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+
+                        android:gravity="center"
+                        android:text="SMS"
+                        android:textColor="#7c5c5c"
+                        android:textSize="15sp" />
+
+                </TableRow>
+
+
+            </TableLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/layout1"
+            android:layout_alignStart="@+id/layout1"
+            android:layout_below="@+id/textView23"
+            android:background="#ffffff">
+
+
+            <ProgressBar
+                android:id="@+id/progressBar2"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="23dp"
+                android:background="@color/greenlight"
+                android:layerType="none"
+                android:progressDrawable="@drawable/progressbar_horizontal"
+                android:scrollbarSize="50dp" />
+
+            <ProgressBar
+                android:id="@+id/progressBar4"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignEnd="@+id/progressBar2"
+                android:layout_alignLeft="@+id/progressBar2"
+                android:layout_alignRight="@+id/progressBar2"
+
+                android:layout_alignStart="@+id/progressBar2"
+                android:layout_below="@+id/progressBar2"
+                android:layout_marginBottom="23dp"
+                android:background="@color/greenlight"
+                android:progressDrawable="@drawable/progressbar_horizontal" />
+
+            <TextView
+                android:id="@+id/tv_dataused"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@id/progressBar2"
+                android:layout_alignLeft="@id/progressBar2"
+                android:layout_alignRight="@id/progressBar2"
+                android:layout_alignTop="@id/progressBar2"
+                android:background="#00000000"
+                android:gravity="center"
+                android:text="0 Calls used" />
+
+            <TextView
+                android:id="@+id/tv_dataremaining"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@id/progressBar4"
+                android:layout_alignLeft="@id/progressBar4"
+                android:layout_alignRight="@id/progressBar4"
+                android:layout_alignTop="@id/progressBar4"
+                android:background="#00000000"
+                android:gravity="center"
+                android:text="0 Calls Remaining" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/layout2"
+            android:layout_alignStart="@+id/layout2"
+            android:layout_below="@+id/layout1"
+            android:layout_marginLeft="13dp"
+            android:layout_marginStart="13dp"
+            android:text="Call Usage"
+            android:textSize="20dp" />
+
+        <RelativeLayout
+            android:id="@+id/layout_recommded_recharge_now"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/layout1"
+            android:layout_alignLeft="@+id/textView38"
+            android:layout_alignRight="@+id/layout1"
+            android:layout_alignStart="@+id/textView38"
+            android:layout_below="@+id/textView38"
+            android:background="#ffffff">
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/viewpager1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1000dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/tabs1"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginStart="1dp"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+                    <android.support.design.widget.TabLayout
+                        android:id="@+id/tabs1"
+                        android:layout_width="match_parent"
+                        android:layout_height="26dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:theme="@style/Theme.AppCompat.Light"
+                        app:tabGravity="center"
+
+
+                        app:tabMode="scrollable"
+                        tools:ignore="UnknownId" />
+                </RelativeLayout>
+            </ScrollView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearLayout"
+            android:layout_marginTop="15dp"
+            android:background="#ffffff">
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textView22"
+                android:layout_alignEnd="@+id/progressBar"
+                android:layout_alignLeft="@+id/progressBar"
+                android:layout_alignRight="@+id/progressBar"
+                android:layout_alignStart="@+id/progressBar"
+                android:gravity="center"
+                android:text="0 Days Left"
+                android:textColor="@color/greendark"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="0 Calls Used"
+                android:textColor="@color/greendark"
+                android:textSize="@dimen/activity_horizontal_margin" />
+
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_above="@+id/textView21"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="13dp"
+                android:layout_marginStart="13dp"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="60"
+                android:progressDrawable="@drawable/circular_progress_bar" />
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignBottom="@+id/textView22"
+                android:layout_alignTop="@+id/textView22"
+
+                android:layout_marginEnd="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_toLeftOf="@+id/textView22"
+
+                android:layout_toStartOf="@+id/textView22"
+                android:background="@color/primary_darker"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Local"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="14dp"
+                android:layout_marginEnd="17dp"
+                android:layout_marginRight="17dp"
+
+
+                android:background="@color/primary_darker"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="STD"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="97dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/progressBar"
+                android:layout_alignStart="@+id/progressBar"
+                android:layout_alignTop="@+id/progressBar"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="69dp"
+                android:gravity="center"
+                android:text="0 Calls Used"
+                android:textColor="@color/greendark"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView23"
+            android:layout_alignStart="@+id/textView23"
+            android:layout_below="@+id/layout2"
+            android:layout_marginTop="14dp"
+            android:text="Call Plans"
+            android:textSize="20dp" />
+
+
+    </RelativeLayout>
+</ScrollView>
